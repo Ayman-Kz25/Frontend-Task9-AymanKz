@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExploreNow - Travel Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">ExploreNow<i class="ri-earth-line"></i></div>
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-toggle">
+          <button type="button" class="btn">Book Now</button>
+          <!-- Dark mode toggle -->
+          <a id="darkToggle" class="toggle-btn"><i class="ri-moon-line"></i></a>
+        </div>
+        <!-- Menu Toggle Button -->
+        <div class="menu-toggle" id="menuToggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="overlay">
+        <div class="hero-content">
+          <h1>Discover the World with <span>ExploreNow</span></h1>
+          <form id="searchForm">
+            <div class="dest">
+              <input
+                type="text"
+                id="destination"
+                placeholder="Destination"
+                required
+              />
+            </div>
+            <div class="date">
+              <input type="date" id="date" required aria-label="date" />
+            </div>
+            <div class="budget">
+              <input
+                type="number"
+                id="budget"
+                placeholder="Budget ($)"
+                required
+              />
+            </div>
+            <div class="btn">
+              <button type="submit" class="btn">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="destinations">
+      <h2>Top Destinations</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="paris.jpeg" alt="Paris" />
+          <h3>Paris</h3>
+          <p>City of lights and love.</p>
+        </div>
+        <div class="card">
+          <img src="bali.jpeg" alt="Bali" />
+          <h3>Bali</h3>
+          <p>Tropical paradise island.</p>
+        </div>
+        <div class="card">
+          <img src="rome.jpeg" alt="Rome" />
+          <h3>Rome</h3>
+          <p>Explore ancient history.</p>
+        </div>
+        <div class="card">
+          <img src="tokyo.jpeg" alt="Tokyo" />
+          <h3>Tokyo</h3>
+          <p>Modern meets tradition.</p>
+        </div>
+        <div class="card">
+          <img src="newyork.jpeg" alt="New York" />
+          <h3>New York</h3>
+          <p>The city that never sleeps.</p>
+        </div>
+        <div class="card">
+          <img src="capetown.jpeg" alt="Cape Town" />
+          <h3>Cape Town</h3>
+          <p>Nature & adventure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="packages">
+      <h2>Travel Packages</h2>
+      <div class="grid">
+        <div class="package-card">
+          <h3>Paris Getaway</h3>
+          <p>5 Days, 4 Nights with guided tours.</p>
+          <span>$1200</span>
+        </div>
+        <div class="package-card">
+          <h3>Bali Adventure</h3>
+          <p>7 Days, 6 Nights with beach resorts.</p>
+          <span>$900</span>
+        </div>
+        <div class="package-card">
+          <h3>Tokyo Explorer</h3>
+          <p>6 Days, 5 Nights with city tours.</p>
+          <span>$1500</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="grid">
+        <div class="testimonial">
+          <img src="client1.jpeg" alt="Client 1" />
+          <div class="info">
+            <h3>Emily R.</h3>
+            <p>
+              “The best travel experience ever! Everything was perfectly
+              arranged.”
+            </p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="client2.jpeg" alt="Client 2" />
+          <div class="info">
+            <h3>David M.</h3>
+            <p>
+              “ExploreNow made my dream vacation come true. Highly recommended!”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-content">
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>Email: info@explorenow.com</p>
+          <p>Phone: +1 234 567 890</p>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <div class="socials">
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-twitter-fill"></i>
+          </div>
+        </div>
+      </div>
+      <p class="copy">&copy; 2025 ExploreNow. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll to top -->
+    <a id="scrollTop"><i class="ri-arrow-up-line"></i></a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
